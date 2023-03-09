@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88cfb956-a3dd-41be-99b8-400629b0e47e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/telegrambot/trade/info/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/telegrambot/trade/info/controller/TelegramBot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/telegrambot/trade/info/apikey/ApiKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/telegrambot/trade/info/socket/TelegramSocketServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/telegrambot/trade/info/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/telegrambot/trade/info/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/telegrambot/trade/info/controller/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/telegrambot/trade/info/controller/TelegramBot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +48,8 @@
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -60,7 +57,20 @@
       <recent name="org.telegrambot.trade.info" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.telegrambot.trade.info.Main" />
+      <module name="TelegramTradeInfoBot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.telegrambot.trade.info.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DispatcherApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" />
       <module name="TelegramTradeInfoBot" />
@@ -77,6 +87,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Spring Boot.DispatcherApplication" />
       </list>
     </recent_temporary>
@@ -90,6 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678365604765</updated>
       <workItem from="1678365606396" duration="5894000" />
+      <workItem from="1678389580202" duration="4342000" />
     </task>
     <servers />
   </component>
