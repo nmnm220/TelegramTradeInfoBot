@@ -19,10 +19,11 @@ public class Main {
             e.printStackTrace();
         }
         try {
-            TelegramSocketServer telegramSocketServer = new TelegramSocketServer(telegramBot);
-            telegramSocketServer.start();
+            TelegramSocketServer server = new TelegramSocketServer(telegramBot);
+            server.start();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
     }
 }

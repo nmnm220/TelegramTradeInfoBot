@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88cfb956-a3dd-41be-99b8-400629b0e47e" name="Changes" comment="init commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/telegrambot/trade/info/socket/ClientConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/telegrambot/trade/info/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/telegrambot/trade/info/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/telegrambot/trade/info/controller/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/telegrambot/trade/info/controller/TelegramBot.java" afterDir="false" />
@@ -101,6 +102,8 @@
       <updated>1678365604765</updated>
       <workItem from="1678365606396" duration="5894000" />
       <workItem from="1678389580202" duration="4342000" />
+      <workItem from="1678532428519" duration="15066000" />
+      <workItem from="1679595571607" duration="3559000" />
     </task>
     <servers />
   </component>

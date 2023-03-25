@@ -6,12 +6,20 @@ import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
+import org.telegrambot.trade.info.socket.ClientConnection;
 import org.telegrambot.trade.info.socket.TelegramSocketServer;
 
 public class TelegramBot extends TelegramLongPollingBot {
     private final String botName = "mytradingbotsinfo_bot";
     private long chatId = 316400150;
-    TelegramSocketServer server;
+    private String receivedText;
+    private TelegramSocketServer server;
+
+    public void setClientConnection(ClientConnection clientConnection) {
+        this.clientConnection = clientConnection;
+    }
+
+    private ClientConnection clientConnection;
     public TelegramBot(String botToken) {
         this(new DefaultBotOptions(), botToken);
     }
@@ -26,8 +34,8 @@ public class TelegramBot extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
         if (update.hasMessage() && update.getMessage().hasText()) {
-            String text = update.getMessage().getText();
-            server.setTextFromTelegram(text);
+            receivedText = update.getMessage().getText();
+            clientConnection.sendText(receivedText);
         }
     }
     public void sendMessage(String textToSend) {
@@ -39,8 +47,5 @@ public class TelegramBot extends TelegramLongPollingBot {
         } catch (TelegramApiException e) {
             throw new RuntimeException(e);
         }
-    }
-    public void setServerSocket(TelegramSocketServer server) {
-        this.server = server;
     }
 }
