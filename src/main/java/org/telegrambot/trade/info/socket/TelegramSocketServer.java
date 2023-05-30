@@ -10,7 +10,6 @@ public class TelegramSocketServer extends Thread {
     private final int port = 6666;
     private final ServerSocket serverSocket;
     private final TelegramBot telegramBot;
-    //private String textFromTelegram = "";
 
     public TelegramSocketServer(TelegramBot telegramBot) throws IOException {
         this.telegramBot = telegramBot;

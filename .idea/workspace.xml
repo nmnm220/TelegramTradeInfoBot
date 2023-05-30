@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88cfb956-a3dd-41be-99b8-400629b0e47e" name="Changes" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/telegrambot/trade/info/socket/ClientConnection.java" afterDir="false" />
+    <list default="true" id="88cfb956-a3dd-41be-99b8-400629b0e47e" name="Changes" comment="fixed socket connection">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/telegrambot/trade/info/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/telegrambot/trade/info/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/telegrambot/trade/info/controller/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/telegrambot/trade/info/controller/TelegramBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/telegrambot/trade/info/socket/ClientConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/telegrambot/trade/info/socket/ClientConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/telegrambot/trade/info/socket/TelegramSocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/telegrambot/trade/info/socket/TelegramSocketServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +103,25 @@
       <workItem from="1678389580202" duration="4342000" />
       <workItem from="1678532428519" duration="15066000" />
       <workItem from="1679595571607" duration="3559000" />
+      <workItem from="1679730670276" duration="4617000" />
+      <workItem from="1680436845697" duration="598000" />
+      <workItem from="1681066344554" duration="760000" />
+      <workItem from="1683387503428" duration="598000" />
+      <workItem from="1684337937822" duration="530000" />
+      <workItem from="1684338479471" duration="104000" />
+      <workItem from="1684338598865" duration="809000" />
+      <workItem from="1684339693958" duration="340000" />
+      <workItem from="1684340049625" duration="8686000" />
+      <workItem from="1684432645649" duration="1902000" />
     </task>
+    <task id="LOCAL-00001" summary="fixed socket connection">
+      <created>1679730925940</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679730925940</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,5 +137,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixed socket connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed socket connection" />
   </component>
 </project>

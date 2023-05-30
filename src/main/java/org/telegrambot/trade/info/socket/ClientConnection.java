@@ -15,6 +15,7 @@ public class ClientConnection extends Thread {
         this.socket = socket;
         telegramBot.setClientConnection(this);
     }
+
     public void sendText(String textToSend) {
         outputWriter.println(textToSend);
         System.out.println(textToSend);
@@ -29,13 +30,21 @@ public class ClientConnection extends Thread {
             OutputStream outputStream = socket.getOutputStream();
             this.outputWriter = new PrintWriter(outputStream, true);
             String input = "";
+            StringBuilder textToSend = new StringBuilder();
             while (true) {
-                if ((input = inputBuffer.readLine()) != null) {
-                    telegramBot.sendMessage(input);
-                    System.out.println(input);
+                Thread.sleep(50);
+                //if ((input = inputBuffer.readLine()) != null) {
+                while (inputBuffer.ready()) {
+                    input = inputBuffer.readLine();
+                    textToSend.append(input).append("\n");
                 }
+                if (!textToSend.isEmpty()) {
+                    telegramBot.sendMessage(textToSend.toString());
+                    System.out.println(textToSend);
+                }
+                textToSend.setLength(0);
             }
-        } catch (IOException e) {
+        } catch (IOException | InterruptedException e) {
             throw new RuntimeException(e);
         }
     }
